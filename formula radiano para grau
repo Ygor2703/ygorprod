@@ -1,0 +1,115 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNXDiGJOsjL9pnY3Bf865uo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ygor2703/ygorprod/blob/main/formula%20radiano%20para%20grau\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "uD2nDBz8GAXw",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "57aca88e-62ac-4fb3-adbe-8b77711ffb11"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o angulo em graus: 30\n",
+            "o angulo de 30.0 graus e igual a 0.523599 radianos.\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "#solicita ao usuario que insira o angulo em graus\n",
+        "graus = float(input(\"Digite o angulo em graus: \"))\n",
+        "#converte o angulo de graus para radianos usando a formula r = g * (3.14/180)\n",
+        "radianos = graus * (math.pi / 180)\n",
+        "#exibe o resultado\n",
+        "print(f\"o angulo de {graus} graus e igual a {radianos:-4f} radianos.\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "formula graus para radianos\n"
+      ],
+      "metadata": {
+        "id": "Wh4JSspo61Ft"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "formula de radianos para graus"
+      ],
+      "metadata": {
+        "id": "_lqD8_BW-nEx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "#solicita ao usuario que insira o angulo em radianos\n",
+        "radianos = float(input(\"Digite o angulo em radianos: \"))\n",
+        "#converte o angulo para graus usando a formula g = r * (180/3.14)\n",
+        "graus = radianos * (180 / math.pi)\n",
+        "#exibe o resultado\n",
+        "print(f\"o angulo de {radianos:-4f} radianos e igual a {graus:-2f} graus.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jkz1273JGpCS",
+        "outputId": "9ee2b098-b497-4864-c439-9744e901d3b9"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o angulo em radianos: 1\n",
+            "o angulo de 1.000000 radianos e igual a 57.295780 graus.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yiGkTOQy-mPV"
+      }
+    }
+  ]
+}
